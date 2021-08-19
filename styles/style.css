@@ -1,0 +1,32 @@
+#container {
+    margin: auto;
+
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+}
+
+main input {
+    width: 15rem;
+    padding-bottom: 6rem;
+}
+
+.error {
+    border-color: red;
+    /* background-color: #f004; */
+}
+
+.error::placeholder {
+    color: red;
+}
+
+::placeholder {
+    color: black;
+}
