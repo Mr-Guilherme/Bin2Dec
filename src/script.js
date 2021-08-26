@@ -41,6 +41,18 @@ function handleValue(e) {
     main(binaryString);
 }
 
+function handleDec(e) {
+    e.preventDefault();
+    const inputDecimal = String($inputDecimal.value);
+
+    if(inputDecimal == "") {
+        $outputDecimal.value = "";
+        return;
+    }
+
+    const binaryString = inputBinary.replace(/\s/g, "");
+}
+
 function convertBinToDec(binary) {
     const decimal = parseInt(binary, 2);
     return decimal;
@@ -65,3 +77,4 @@ function main(inputValue) {
 }
 
 $inputBinary.addEventListener('keyup', handleValue);
+$inputDecimal.addEventListener('keyup', handleDec);
